@@ -400,16 +400,97 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*TABLET STYLES SECTION*/
+
+@media only screen and (min-width: 768px) {
+   /*General Styles*/
+    .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+    }
+
+    /*Header*/
+
+    header {
+
+    }
+
+    header .content-wrapper {
+      width:
+    }
+
+    header nav {
+      width:
+    }
+
+    header nav ul {
+
+    }
+
+    .header-divider {
+      display: none;
+    }
+
+    /*Hero Area*/
+
+    /*Aside*/
+    aside .content-wrapper {
+      margin: 50px 0;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: ;
+      margin: 0;
+    }
+
+    /*Features*/
+
+    .features article {
+
+    }
+
+    .features .features-item-description {
+      width: ;
+    }
+
+    /*Reviews*/
+
+    .reviews article {
+
+    }
+
+    .reviews article div {
+      width: ;
+    }
+
+    /*Footer*/
+
+    footer .content-wrapper {
+      width: ;
+      margin: 100px 0;
+    }
+
+    .footer-content {
+
+    }
+
+    footer .contact {
+      margin-bottom: 0;
+    }
+
+    footer .copyright {
+      width:
+    }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
+/*DESKTOP STYLES SECTION*/
+
+@media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+   }
 
 /* ==========================================================================
    Print styles.
