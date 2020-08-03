@@ -260,6 +260,10 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .social-icons i {
+  font-size: 2em;
+}
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -352,6 +356,12 @@ input[type=button] {
 .features p {
   text-align: center;
   margin: 0;
+}
+
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 
