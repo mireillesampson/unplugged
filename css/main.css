@@ -109,6 +109,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -121,6 +123,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -163,7 +166,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: row wrap;
+  flex-flow: row wrap;
   background-color: #202322;
 }
 
@@ -228,7 +231,6 @@ header nav ul li a {
 footer {
   flex-direction: column;
   text-align: center;
-  color: #ffffff;
 }
 
 footer p {
@@ -244,10 +246,6 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social {
-
-}
-
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -258,10 +256,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
-footer .social-icons i {
-  font-size: 2em;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -275,14 +277,14 @@ footer .copyright {
 .hero-area {
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2em;
   font-size: 2.25em;
@@ -613,6 +615,10 @@ input[type=button] {
 
     /*Hero Area*/
 
+    .hero-area {
+      min-height: 600px;
+    }
+
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -652,6 +658,10 @@ input[type=button] {
       width: 62%;
     }
 
+    .features i {
+      margin-bottom: 30px;
+    }
+
     /*Reviews*/
 
     .reviews article {
@@ -671,6 +681,7 @@ input[type=button] {
     .reviews h3 {
       width: 75%;
       margin: 0;
+      padding: 0;
     }
 
     /*Footer*/
@@ -692,16 +703,18 @@ input[type=button] {
     }
 
     footer .copyright {
-      font-size: 1.5em;
+      font-size: 1em;
       margin-bottom: 40px;
+      width: 100%;
     }
 
     footer p {
       line-height: 1.285;
     }
 
-    footer .copyright {
-      width: 100%
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
     }
 
 
@@ -752,7 +765,7 @@ input[type=button] {
 
     .faq h4,
     .faq p {
-      font-size 0.875em;
+      font-size: 0.875em;
       line-height: 1.125;
     }
 }
@@ -769,7 +782,7 @@ input[type=button] {
   }
 
   .content-wrapper {
-    max-width: 960px:
+    max-width: 960px;
   }
 
   h2 {
@@ -790,7 +803,7 @@ input[type=button] {
   /*Hero*/
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /*Aside*/
@@ -832,13 +845,14 @@ input[type=button] {
 
   /*About Page*/
   .mission h2,
-  .contact-section .content-wrapper h2 {
+  .contact-info .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
-.map figure {
-  padding-bottom: 37.5%;
-}
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .contact-content h4 {
     font-size: 1.875em;
@@ -847,6 +861,7 @@ input[type=button] {
   /*FAQ Page*/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq h4
